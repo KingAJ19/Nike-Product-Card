@@ -1,0 +1,121 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #81f7f3;
+    font-family: sans-serif;
+}
+
+.product{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 400px;
+    background: #0e0e0f;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    overflow: hidden;
+}
+.product .imgbox{
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.product .imgbox img{
+    display: block;
+    width: 80%;
+    margin: 10px auto 0;
+}
+
+.specifics{
+    cursor: pointer;
+    position: absolute;
+    width: 100%;
+    bottom: -127px;
+    background: #fff;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: .5s;
+}
+
+.product:hover .specifics{
+    bottom: 0;
+}
+.specifics h2{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    width: 100%;
+}
+
+.specifics h2 span{
+    font-size: 15px;
+    color: #ccc;
+    font-weight: normal;
+}
+.specifics .price{
+    position: absolute;
+    top: 12px;
+    right: 25px;
+    font-weight: bold;
+    color: #000;
+    font-size: 30px;
+}
+label{
+    display: block;
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 15px;
+}
+ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+ul li{
+    list-style: none;
+    margin: 5px 5px 0;
+    font-size: 15px;
+    font-weight: normal;
+    color: #ccc;
+}
+
+ul li:first-child{
+    margin-left: 0;
+}
+ul.colors li{
+    width: 15px;
+    height: 15px;
+}
+ul.colors li:nth-child(1){
+    background: #00f;
+}
+ul.colors li:nth-child(2){
+    background: #f00;
+}
+ul.colors li:nth-child(3){
+    background: #0ff;
+}
+ul.colors li:nth-child(4){
+    background: #ff0;
+}
+ul.colors li:nth-child(5){
+    background: #f0f;
+}
+a {
+    display: block;
+    padding: 5px;
+    color: #fff;
+    margin: 10px 0 0;
+    background: #45b90e;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: .02s;
+    cursor: pointer;
+}
+a:hover{
+    background: #5acef4;
+}
